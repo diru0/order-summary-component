@@ -1,0 +1,197 @@
+:root {
+  --pale-blue: #d6e1ff;
+  --bright-blue: #382ae1;
+  --desaturated-blue: #717fa6;
+  --dark-blue: #1f2e55;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  align-items: center;
+  background-color: #e0e8ff;
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  display: flex;
+  flex-direction: column;
+  max-width: 327px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card__heading {
+  color: #1f2e55;
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+.card__description {
+  color: var(--desaturated-blue);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.card__body {
+  align-items: center;
+  background: #f7f9ff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 24px 24px 24px;
+  padding: 16px;
+}
+
+.card__plan {
+  position: relative;
+  right: 13px;
+}
+
+.card__name {
+  bottom: 1.5px;
+  color: var(--dark-blue);
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.card__cost {
+  color: #717fa6;
+  font-size: 1.4rem;
+  position: relative;
+  top: 1.5px;
+}
+
+.card__payment {
+  background: var(--bright-blue);
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 20px 20px rgba(56, 42, 225, 0.190291);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  outline: 0;
+  padding: 16.5px;
+  width: 279px;
+}
+
+.card__payment:hover {
+  background: #766cf1;
+}
+
+.card__change a {
+  color: var(--bright-blue);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.card__change a:visited {
+  color: var(--bright-blue);
+}
+
+.card__change a:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.card__cancel {
+  background: #fff;
+  color: var(--desaturated-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.card__cancel-link {
+  color: var(--desaturated-blue);
+}
+
+.card__cancel-link:visited {
+  color: var(--desaturated-blue);
+}
+
+.card__cancel-link:hover {
+  color: var(--dark-blue);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: url(images/pattern-background-desktop.svg);
+    background-color: #e0e8ff;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .card {
+    max-width: 450px;
+  }
+
+  .card__heading {
+    margin-top: 45px;
+    font-size: 2.8rem;
+  }
+
+  .card__description {
+    font-size: 1.6rem;
+    margin: 17px 48px 20px 48px;
+  }
+
+  .card__body {
+    height: 98px;
+    margin: 0 48px 32px 48px;
+    padding: 25px 24px;
+  }
+
+  .card__name {
+    bottom: 3px;
+  }
+
+  .card__cost {
+    top: 3px;
+  }
+
+  .card__plan {
+    right: 45px;
+  }
+
+  .card__cancel {
+    margin-bottom: 48px;
+  }
+
+  .card__payment {
+    width: 354px;
+    margin-bottom: 32px;
+  }
+}
