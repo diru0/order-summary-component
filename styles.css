@@ -24,7 +24,7 @@ body {
   display: flex;
   font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
 }
 
