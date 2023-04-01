@@ -52,6 +52,7 @@ a {
   font-size: 2.2rem;
   margin-bottom: 16px;
   margin-top: 32px;
+  font-weight: 900;
 }
 
 .card__header-description {
@@ -59,7 +60,7 @@ a {
   font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 24px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .card__body {
@@ -165,13 +166,11 @@ a {
   .card__header-heading {
     margin-top: 45px;
     font-size: 2.8rem;
-    font-weight: 900;
   }
 
   .card__header-description {
     font-size: 1.6rem;
     margin: 17px 48px 20px 48px;
-    font-weight: 500;
   }
 
   .card__body {
