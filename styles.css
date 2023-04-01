@@ -90,7 +90,8 @@ a {
   font-size: 1.4rem;
   position: relative;
   top: 1.5px;
-  right: 3px;
+  right: 2px;
+  font-weight: 500;
 }
 
 .card__footer-payment {
@@ -190,7 +191,6 @@ a {
 
   .card__plan-cost {
     top: 3px;
-    right: 3px;
     font-size: 1.6rem;
   }
 
