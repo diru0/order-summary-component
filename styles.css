@@ -47,18 +47,19 @@ a {
   text-align: center;
 }
 
-.card__heading {
+.card__header-heading {
   color: #1f2e55;
   font-size: 2.2rem;
   margin-bottom: 16px;
   margin-top: 32px;
 }
 
-.card__description {
+.card__header-description {
   color: var(--desaturated-blue);
   font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 24px;
+  font-weight: 400;
 }
 
 .card__body {
@@ -76,22 +77,23 @@ a {
   right: 13px;
 }
 
-.card__name {
+.card__plan-name {
   bottom: 1.5px;
   color: var(--dark-blue);
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 900;
   position: relative;
 }
 
-.card__cost {
+.card__plan-cost {
   color: #717fa6;
   font-size: 1.4rem;
   position: relative;
   top: 1.5px;
+  right: 3px;
 }
 
-.card__payment {
+.card__footer-payment {
   background: var(--bright-blue);
   border-radius: 10px;
   border: 0;
@@ -106,43 +108,43 @@ a {
   width: 279px;
 }
 
-.card__payment:hover {
+.card__footer-payment:hover {
   background: #766cf1;
 }
 
-.card__change a {
+.card__plan-change a {
   color: var(--bright-blue);
   font-size: 1.3rem;
   font-weight: 700;
   text-decoration: underline;
 }
 
-.card__change a:visited {
+.card__plan-change a:visited {
   color: var(--bright-blue);
 }
 
-.card__change a:hover {
+.card__plan-change a:hover {
   color: #766cf1;
   text-decoration: none;
 }
 
-.card__cancel {
+.card__footer-cancel {
   background: #fff;
   color: var(--desaturated-blue);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 32px;
 }
 
-.card__cancel-link {
+.card__footer-cancel a {
   color: var(--desaturated-blue);
 }
 
-.card__cancel-link:visited {
+.card__footer-cancel a:visited {
   color: var(--desaturated-blue);
 }
 
-.card__cancel-link:hover {
+.card__footer-cancel a:hover {
   color: var(--dark-blue);
 }
 
@@ -158,14 +160,16 @@ a {
     max-width: 450px;
   }
 
-  .card__heading {
+  .card__header-heading {
     margin-top: 45px;
     font-size: 2.8rem;
+    font-weight: 900;
   }
 
-  .card__description {
+  .card__header-description {
     font-size: 1.6rem;
     margin: 17px 48px 20px 48px;
+    font-weight: 500;
   }
 
   .card__body {
@@ -174,23 +178,34 @@ a {
     padding: 25px 24px;
   }
 
-  .card__name {
-    bottom: 3px;
-  }
-
-  .card__cost {
-    top: 3px;
-  }
-
   .card__plan {
+    right: 40px;
+  }
+
+  .card__plan-name {
+    bottom: 3px;
+    font-size: 1.6rem;
+  }
+
+  .card__plan-cost {
+    top: 3px;
+    right: 3px;
+    font-size: 1.6rem;
+  }
+
+  .card__plan-change {
     right: 45px;
   }
 
-  .card__cancel {
+  .card__plan-change a {
+    font-size: 1.4rem;
+  }
+
+  .card__footer-cancel {
     margin-bottom: 48px;
   }
 
-  .card__payment {
+  .card__footer-payment {
     width: 354px;
     margin-bottom: 32px;
   }
