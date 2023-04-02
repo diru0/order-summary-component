@@ -121,7 +121,6 @@ a {
   font-size: 1.3rem;
   font-weight: 700;
   text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 .card__plan-change a:visited {
