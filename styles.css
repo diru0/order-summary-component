@@ -59,8 +59,9 @@ a {
   color: var(--desaturated-blue);
   font-size: 1.5rem;
   line-height: 1.5;
-  margin-bottom: 24px;
   font-weight: 500;
+  max-width: 270px;
+  margin: auto;
 }
 
 .card__body {
@@ -71,6 +72,7 @@ a {
   justify-content: space-between;
   margin: 0 24px 24px 24px;
   padding: 16px;
+  margin-top: 24px;
 }
 
 .card__plan {
@@ -171,6 +173,7 @@ a {
   .card__header-description {
     font-size: 1.6rem;
     margin: 17px 48px 20px 48px;
+    max-width: 354px;
   }
 
   .card__body {
